@@ -1,0 +1,76 @@
+.graph-container {
+  background-color: black;
+  border-radius: 5px;
+  padding: 1em;
+  margin: auto;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  max-height: 70vh;
+  max-width: 70vw;
+  overflow-y: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 400px;
+}
+
+.graph-item-value {
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+.graph-bar {
+  width: calc(70vw / 25);
+  display: inline-block;
+  margin: 0 1.5px;
+  bottom: 0;
+  overflow-x: hidden;
+  -webkit-transition: 0.2s all ease;
+  transition: 0.2s all ease;
+}
+
+.btn {
+  background-color: #ffbe00;
+  font-family: "Source Sans Pro";
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 22px;
+  margin: 25px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: red;
+}
+
+.btn:active {
+  background-color: #ffab00;
+  -webkit-transform: translateY(3px);
+  transform: translateY(3px);
+}
+
+.graph-item-value {
+  color: red;
+}
+
+@media (max-width: 768px) {
+  .graph-container {
+    max-width: 85vw;
+  }
+  .graph-bar {
+    width: calc(85vw / 25);
+  }
+  .graph-item-value {
+    font-size: 12px;
+  }
+}
+/*# sourceMappingURL=graph.css.map */
